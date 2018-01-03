@@ -18,7 +18,9 @@
 
 * **VirtualBox x.y.z Oracle VM VirtualBox Extension Pack**，这个是扩展包，提供 USB2.0/3.0 支持等一系列功能。
 
+![](/assets/virtualbox_web_download.png)
 
+安装完成以后双击扩展包安装它，于是主界面大概就是这个样子：![](/assets/virtualbox_main.png)大概这样就算安装完了？�
 
 
 
