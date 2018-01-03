@@ -6,5 +6,19 @@
 >
 > [https://zh.wikipedia.org/wiki/VirtualBox](https://zh.wikipedia.org/wiki/VirtualBox "Wikipedia:VirtualBox")
 
+## 下载 VirtualBox
+
+首先用汝喜欢的浏览器打开 [https://www.virtualbox.org](https://www.virtualbox.org/) 呗~然后戳中间大大的 Download 按钮。
+
+![](/assets/virtualbox_web_main.png)
+
+需要下载的有两个：
+
+* **VirtualBox x.y.z platform packages**，这个是软件的安装包。
+
+* **VirtualBox x.y.z Oracle VM VirtualBox Extension Pack**，这个是扩展包，提供 USB2.0/3.0 支持等一系列功能。
+
+
+
 
 
