@@ -10,13 +10,9 @@
 * GNU/Linux：历史，人物，为啥这么叫？以及各种发行版。
 * 自由软件运动：还是历史，还是人物，以及为啥它很重要。
 
-## 虚拟环境的搭建
+## 在 VirtualBox 虚拟机中安装 Debian
 
-* 下载和安装 VirtualBox （和 Guest additions？）
-* 创建一个虚拟机（以及调整各种设置）
-
-## 在虚拟机中安装 Debian
-
+* 
 * 取得 Debian 的安装 ISO
 * 用 ISO 启动虚拟机
 * 进行安装
@@ -85,6 +81,7 @@
 * 基础安全知识：加密和解密的算法，散列和签名，常见的攻击措施（然而缺少技能点）
 
 * 为啥要注意安全
+
 * 防火墙工具 iptables 和 ufw
 * 加密工具 dm-crypt 和 VeraCrypt
 * 签名 and 验证 and 加密工具 GnuPG
