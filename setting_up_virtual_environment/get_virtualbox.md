@@ -8,5 +8,3 @@
 
 
 
-![](/assets/virtualbox_web.png)
-
