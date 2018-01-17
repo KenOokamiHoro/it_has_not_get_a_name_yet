@@ -10,7 +10,7 @@
 
 VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
 
-## VirtualBox + Debian， 这不<del>清真<del>自由……
+## VirtualBox + Debian， 这不<del>清真</del>自由……
 
 ## 计划中的目录
 
