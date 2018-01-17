@@ -14,9 +14,16 @@ VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
 
 去看看 [plans.md](plans.md) 咯~
 
+## 你可能会遇到……
+
+* 文风骤变
+* 上下文和时间线混乱
+* 等等……
+
 ## 作者（目前好像不能算是群）
 
 * 一只笨狼 [KenOokamiHoro](https://github.com/KenOokamiHoro)
+* 一块土豆 [BennyThink](https://github.com/BennyThink)
 * ……
 
 ## 参考来源和致谢
