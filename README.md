@@ -1,6 +1,5 @@
 # 起个名字好难啊…… 😂
 
-=======
 也许会成为一本初级 GNU/Linux 魔法书？
 
 ## 标题征集中 (/▽＼)
@@ -17,7 +16,7 @@ VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
 
 去看看 [plans.md](plans.md) 咯~
 
-## 你可能会遇到……
+## 汝可能会遇到……
 
 * 文风骤变
 * 上下文和时间线混乱
