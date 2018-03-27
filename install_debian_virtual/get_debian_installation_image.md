@@ -9,7 +9,7 @@
 
 还是用汝喜欢的浏览器打开 [https://www.debian.org/distrib/](https://www.debian.org/distrib/) 呗~然后……没有大大的 Download 按钮。
 
-呐，汝不要慌张啦。汝看下面这张图，这是在网站左上角这部分：
+呐，汝不要慌张啦。汝看下面这张图，这是在网站左上角的一部分：
 
 ![](/assets/get_debian_installation_image/download_part.png)
 
