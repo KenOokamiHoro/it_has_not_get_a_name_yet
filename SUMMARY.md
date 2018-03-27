@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
-* [First Chapter](chapter1.md)
-* [Plans](plans.md)
+* [概览](README.md)
+* [计划中的目录](plans.md)
 
