@@ -6,9 +6,9 @@
 
 如果汝不知道什么是科学上网，并且对百度、360 etc.的厂商感到很满意，汝就没有这个需求啦。
 
-# Linux 下科学上网的方式
+## Linux 下科学上网的方式
 
-## ShadowSocks
+### ShadowSocks
 
 俗称ss，如果汝有 ShadowSocks 帐号的话，可以采用下面的方式：
 
