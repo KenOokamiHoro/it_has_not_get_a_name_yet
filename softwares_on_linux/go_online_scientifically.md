@@ -30,20 +30,21 @@
 
   当然，汝也可以把这些东西写在配置文件里：
 
-  > 这是官方的配置文件示例：
-  >     {
-	>         "server":"remote-shadowsocks-server-ip-addr",
-	>         "server_port":443,
-	>         "local_address":"127.0.0.1",
-	>         "local_port":1080,
-	>         "password":"your-passwd",
-	>         "timeout":300,
-	>         "method":"chacha20-ietf",
-	>         "fast_open":false,
-	>         "workers":1
-  >     }
+  这是官方的配置文件示例：
 
-  在汝写完配置文件之后，便可以通过 ```sslocal -c 配置文件路径``` 来运行它了。
+      {
+            "server":"remote-shadowsocks-server-ip-addr",
+            "server_port":443,
+            "local_address":"127.0.0.1",
+            "local_port":1080,
+            "password":"your-passwd",
+            "timeout":300,
+            "method":"chacha20-ietf",
+            "fast_open":false,
+            "workers":1
+      }
+
+  在汝写完配置文件之后（保存为 ```xxx.json```），便可以通过 ```sslocal -c 配置文件路径``` 来运行它了。
 
 2. GUI（图形交互界面）
 
