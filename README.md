@@ -26,6 +26,8 @@ VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
 
 * 一只笨狼 [KenOokamiHoro](https://github.com/KenOokamiHoro)
 * 一块土豆 [BennyThink](https://github.com/BennyThink)
+* <del>小学生</del> [OriginCode](https://github.com/OriginCode)
+* 病娇酱 [yanderemoe](https://github.com/yanderemoe)
 * ……
 
 ## 参考来源和致谢
