@@ -76,11 +76,11 @@ Ubuntu 属于商业发行版（其后台是 Canonical公司）。Ubuntu曾经爆
 
 ## 想激进些？
 
-TODO: Fedora/Arch
+TODO: Fedora/Arch/openSUSE Tumbleweed
 
 ## 想稳定些？
 
-TODO：CentOS（？）
+TODO：CentOS（？）/继续用Debian
 
 ## 想更温暖？（误）
 
