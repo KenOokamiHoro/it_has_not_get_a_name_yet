@@ -43,4 +43,42 @@
 
 然后翻到最下面把第一片（debian-9.4.0-amd64-DVD-1.iso ）下载下来就好。
 
-    TODO: Windows 下面有啥散列值和 GnuPG 签名验证的工具没？
+嫌太慢就从镜像站下载😂😂😂
+
+## 验证文件
+
+你需要验证 下载来的 Debian CD/DVD 映像文件，以确保没下载来个假货😂
+所以你需要这么做：
+
+Linux:
+```console
+$ export DEBIAN_CDIMAGE_BASE=https://cdimage.debian.org # 方便起见
+$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS # 或 SHA256SUMS（MD5 / SHA-1 有弱点，然而你还是可以这么做。）
+$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign # 签名文件
+$ sha512sum -c SHA512SUMS
+$ # 文件全部 OK，然而这还没完。
+$ gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
+$ gpg --verify SHA512SUMS.sign # gpg: Good signature from xxx 才行
+```
+
+Mac: 
+下载 https://releases.gpgtools.org/GPG_Suite-2018.1.dmg 并安装，然后同上。
+
+Windows: 
+
+从[这个地方](http://implbits.com/products/hashtab/HashTab_v6.0.0.34_Setup.exe)下载 HashTab 并安装。
+右键下载下来的镜像，选择“属性”，你会看到一个叫做“File Hashes”的标签，打开就能看到校验码了。然后与打开的校验码文件比对即可（这个文件要从 HTTPS 主站或镜像站拿下来）
+
+想更有趣的话，打开 PowerShell，然后：
+```powershell
+$DEBIAN_CDIMAGE_BASE = https://cdimage.debian.org # 方便起见
+Invoke-WebRequest -Uri https://gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.2.6_20180409.exe -OutFile .\gnupg-w32-2.2.6_20180409.exe # 下载 GnuPG 安装程序
+.\gnupg-w32-2.2.6_20180409.exe
+# 按照安装指示操作
+Invoke-WebRequest -Uri $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS
+Get-FileHash -Algorithm SHA512 -Path debian-9.4.0-amd64-DVD-1.iso | Format-List # 这样看起来舒服😊
+# 比对输出的散列值
+Invoke-WebRequest -Uri $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign -OutFile SHA512SUMS.sign
+gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
+gpg --verify SHA512SUMS.sign # gpg: Good signature from xxx 才行
+```
