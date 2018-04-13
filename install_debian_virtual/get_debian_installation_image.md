@@ -43,4 +43,20 @@
 
 然后翻到最下面把第一片（debian-9.4.0-amd64-DVD-1.iso ）下载下来就好。
 
-    TODO: Windows 下面有啥散列值和 GnuPG 签名验证的工具没？
+    其实你也可以从镜像站下载的😂😂😂
+
+## 验证文件
+
+你需要验证 下载来的 Debian CD/DVD 映像文件，以确保没下载来个假货😂
+所以你需要这么做：
+
+Linux:
+```console
+$ export DEBIAN_CDIMAGE_BASE=https://cdimage.debian.org # 方便起见
+$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS(,.sign) # 或 SHA256SUMS（MD5 / SHA-1 有弱点，不建议）
+$ sha512sum -c SHA512SUMS
+$ # 文件全部 OK，然而这还没完。
+$ gpg --verify SHA512SUMS.sign
+$ # 如果需要导入密钥，参考 https://www.debian.org/CD/verify
+```
+Windows: （待续）
