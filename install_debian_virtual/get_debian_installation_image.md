@@ -43,7 +43,7 @@
 
 然后翻到最下面把第一片（debian-9.4.0-amd64-DVD-1.iso ）下载下来就好。
 
-    其实你也可以从镜像站下载的😂😂😂
+嫌太慢就从镜像站下载😂😂😂
 
 ## 验证文件
 
@@ -53,10 +53,27 @@
 Linux:
 ```console
 $ export DEBIAN_CDIMAGE_BASE=https://cdimage.debian.org # 方便起见
-$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS(,.sign) # 或 SHA256SUMS（MD5 / SHA-1 有弱点，不建议）
+$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS # 或 SHA256SUMS（MD5 / SHA-1 有弱点，不建议）
+$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign # 签名文件
 $ sha512sum -c SHA512SUMS
 $ # 文件全部 OK，然而这还没完。
+$ gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
 $ gpg --verify SHA512SUMS.sign
-$ # 如果需要导入密钥，参考 https://www.debian.org/CD/verify
 ```
-Windows: （待续）
+
+Mac: 
+下载 https://releases.gpgtools.org/GPG_Suite-2018.1.dmg 并安装，然后同上。
+
+Windows: 
+```powershell
+$DEBIAN_CDIMAGE_BASE = https://cdimage.debian.org # 方便起见
+Invoke-WebRequest -Uri https://gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.2.6_20180409.exe -OutFile .\gnupg-w32-2.2.6_20180409.exe # 下载 GnuPG 安装程序
+.\gnupg-w32-2.2.6_20180409.exe
+# 按照安装指示操作
+Invoke-WebRequest -Uri $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS
+Get-FileHash -Algorithm SHA512 -Path debian-9.4.0-amd64-DVD-1.iso | Format-List # 这样看起来舒服😊
+# 比对输出的散列值
+Invoke-WebRequest -Uri $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign -OutFile SHA512SUMS.sign
+gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
+gpg --verify SHA512SUMS.sign
+```
