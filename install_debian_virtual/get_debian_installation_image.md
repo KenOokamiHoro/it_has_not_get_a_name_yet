@@ -58,7 +58,7 @@ $ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign # �
 $ sha512sum -c SHA512SUMS
 $ # 文件全部 OK，然而这还没完。
 $ gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
-$ gpg --verify SHA512SUMS.sign
+$ gpg --verify SHA512SUMS.sign # gpg: Good signature from xxx 才行
 ```
 
 Mac: 
@@ -75,5 +75,5 @@ Get-FileHash -Algorithm SHA512 -Path debian-9.4.0-amd64-DVD-1.iso | Format-List 
 # 比对输出的散列值
 Invoke-WebRequest -Uri $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign -OutFile SHA512SUMS.sign
 gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
-gpg --verify SHA512SUMS.sign
+gpg --verify SHA512SUMS.sign # gpg: Good signature from xxx 才行
 ```
