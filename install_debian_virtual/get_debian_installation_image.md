@@ -53,7 +53,7 @@
 Linux:
 ```console
 $ export DEBIAN_CDIMAGE_BASE=https://cdimage.debian.org # 方便起见
-$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS # 或 SHA256SUMS（MD5 / SHA-1 有弱点，不建议）
+$ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS # 或 SHA256SUMS（MD5 / SHA-1 有弱点，然而你还是可以这么做。）
 $ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign # 签名文件
 $ sha512sum -c SHA512SUMS
 $ # 文件全部 OK，然而这还没完。
@@ -65,6 +65,11 @@ Mac:
 下载 https://releases.gpgtools.org/GPG_Suite-2018.1.dmg 并安装，然后同上。
 
 Windows: 
+
+从[这个地方](http://implbits.com/products/hashtab/HashTab_v6.0.0.34_Setup.exe)下载 HashTab 并安装。
+右键下载下来的镜像，选择“属性”，你会看到一个叫做“File Hashes”的标签，打开就能看到校验码了。然后与打开的校验码文件比对即可（这个文件要从 HTTPS 主站或镜像站拿下来）
+
+想更有趣的话，打开 PowerShell，然后：
 ```powershell
 $DEBIAN_CDIMAGE_BASE = https://cdimage.debian.org # 方便起见
 Invoke-WebRequest -Uri https://gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.2.6_20180409.exe -OutFile .\gnupg-w32-2.2.6_20180409.exe # 下载 GnuPG 安装程序
