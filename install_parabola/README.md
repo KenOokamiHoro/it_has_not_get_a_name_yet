@@ -1,4 +1,3 @@
-# 设置虚拟环境（VirtualBox）
-
+# 安装 Parabola GNU/Linux Libre
 
 

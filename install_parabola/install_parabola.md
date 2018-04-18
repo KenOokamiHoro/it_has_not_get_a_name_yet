@@ -532,6 +532,32 @@ EFI 安装成功以后大概像这样 😂
     # passwd horo
 ```
 
+## 为新用户设置 sudo 
+
+    sudo(substitute user do) 使得系统管理员可以授权特定用户或用户组作为 root 或他用户执行某些（或所有）命令，同时还能够对命令及其参数提供审核跟踪。
+
+    用户可以选择用 su 切换到 root 用户运行命令，但是这种方式会启动一个 root shell 并允许用户运行之后的所有的命令。而 sudo 可以针对单个命令、仅在需要时授予临时权限，减少因为执行错误命令损坏系统的可能性。sudo 也能以其他用户身份执行命令并且记录用户执行的命令，以及失败的权限申请。
+
+出于安全考虑，大多数时候都应该用 `visudo` 命令来修改 /etc/sudoers 文件而不是直接修改那个文件。可以通过设置 EDITOR 环境变量来指定使用啥编辑器（默认是 vim）
+
+``` bash
+    EDITOR=nano visudo
+```
+
+这里咱把这一行取消注释，然后保存：
+
+``` text
+# %wheel      ALL=(ALL) NOPASSWD: ALL
+```
+
+接着把刚才新建的用户添加到 wheel 组中：
+
+``` bash
+# gpasswd -a 用户名 要添加到的用户组
+# -a 就是 --add 啦 ~
+gpasswd -a horo wheel
+```
+
 ## 激活需要的服务（显示管理器啦，GNOME 里用的是 GDM）
 ``` bash
     # systemctl enable gdm

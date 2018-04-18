@@ -16,18 +16,11 @@
 * 一个可行的（？）学习路线
 * 获得帮助和帮助他人
 
-## 在 VirtualBox 虚拟机中安装 Debian
+## 安装 Parabola
 
 * 取得 Debian 的安装 ISO
-* 用 ISO 启动虚拟机
+* 准备存储空间和安装介质
 * 进行安装
-* 登录和安装 Guest Additions
-
-## 在实机上安装
-
-* 制作安装介质（光盘 or U盘）
-* 和 Windows 组成多重引导相关
-* 解决缺少私有固件的问题
 
 ## 基础使用
 
@@ -35,7 +28,7 @@
 * 连接到网络
 * 终端模拟器和切换到虚拟终端
 * 最基本的 Shell 命令 （比如？）
-* 安装二进制软件（ gnome-software ? / apt / dpkg ）
+* 学习使用 pacman 包管理器
 * 个性化设置（系统设置和Teaks）
 
 ## 学习 Shell
@@ -55,7 +48,7 @@
 * 图片查看与处理：Shotwell，eog，GIMP……
 * 文档处理：LibreOffice
 * 文字编辑器：gedit，vim，（有没有人会 Emacs 啊）
-* \(Not a Windows Emulator\) Wine
+* <s> \(Not a Windows Emulator\) Wine</s>
 
 ## 常用 CLI 工具
 
