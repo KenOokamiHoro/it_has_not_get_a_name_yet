@@ -33,6 +33,9 @@ VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
 ## 参考来源和致谢
 
 
+## 一起来讨（tu）论（cao）吧 😂
+
+https://matrix.to/#/#nameless:yoitsu.moe
 
 ## 许可协议
 
