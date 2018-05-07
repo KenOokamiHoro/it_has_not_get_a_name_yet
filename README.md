@@ -26,11 +26,17 @@ Parabola GNU/Linux Libre（With GNOME Desktop）
 * 一块土豆 [BennyThink](https://github.com/BennyThink)
 * <del>小学生</del> [OriginCode](https://github.com/OriginCode)
 * 病娇酱 [yanderemoe](https://github.com/yanderemoe)
+* <del>灵魂互换</del> 布偶君 [ShadowRZ](https://github.com/ShadowRZ)
+* [Outvi V](https://github.com/outloudvi) 
+* 布鲁斯兔兔 [Brucetut](https://github.com/BruceZhang1993)
 * ……
 
 ## 参考来源和致谢
 
 
+## 一起来讨（tu）论（cao）吧 😂
+
+https://matrix.to/#/#nameless:yoitsu.moe
 
 ## 许可协议
 
