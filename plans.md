@@ -41,14 +41,13 @@
 ## 使用各种软件
 
 * 科学上网（……）
-* 互联网浏览器：Firefox 和 Chromium
-* 电子邮件客户端：Evolution 和 ThunderBird
-* 即时通信：Empathy，Pidgin，\*Tox，Polari / weehat，Riot.im
+* 互联网浏览器：Firefox （IceWeasel）
+* 电子邮件客户端：Evolution 和 ThunderBird （IceBird）
+* 即时通信：Empathy，Pidgin，\*Tox，Polari / weechat，Riot.im
 * 媒体播放器：Rhythmbox，\*Mplayer，VLC……
 * 图片查看与处理：Shotwell，eog，GIMP……
 * 文档处理：LibreOffice
 * 文字编辑器：gedit，vim，（有没有人会 Emacs 啊）
-* <s> \(Not a Windows Emulator\) Wine</s>
 
 ## 常用 CLI 工具
 
