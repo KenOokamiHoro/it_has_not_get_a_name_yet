@@ -1,0 +1,1 @@
+# 终端模拟器的使用（例如 gnome-terminal）

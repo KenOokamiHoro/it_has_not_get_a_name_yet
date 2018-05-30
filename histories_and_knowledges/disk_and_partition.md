@@ -13,3 +13,46 @@ GUID磁碟分割表（GUID Partition Table，缩写：GPT）是一个實體硬�
 
 ## 那么怎么区分呢？
 
+在 GNU/Linux 上，可以用 fdisk 命令来查看：
+
+```bash
+
+# -l 就是 --list 啦，用来列出现有的磁盘
+$ fdisk -l
+
+Disk /dev/sda: 894.3 GiB, 960197124096 bytes, 1875385008 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 861DC223-ED68-4A91-7497-87243A07180A
+
+Device          Start        End    Sectors   Size Type
+/dev/sda1        2048    1050623    1048576   512M EFI System
+/dev/sda2     1050624 1665667071 1664616448 793.8G Linux filesystem
+/dev/sda3  1665667072 1875380223  209713152   100G Microsoft basic data
+/dev/sda4  1875380224 1875384974       4751   2.3M BIOS boot
+
+```
+
+输出中的 Disklabel type 就是磁盘的分区表类型啦（比如这里的就是 GPT）
+
+## 还有下面那个 /dev/sda 啥的是啥玩意？
+
+毕竟 GNU/Linux 也被称作类 Unix 系统嘛，自然继承了 UNIX 一切皆文件的思想，
+上面哪些 /dev/sda 啥的其实就是映射出来的设备“文件”啦……
+
+现在的电脑基本都使用的是 SATA 接口的硬盘啦，于是第一块硬盘就是 /dev/sda 啦
+（同理第二块就是 /dev/sdb ，以此类推……）。一些还在用 ATA 接口的老式电脑上可能会有
+/dev/hda 一类的硬盘。
+
+后面的数字就是分区啦，比如 /dev/sda1 就是这个硬盘上的第一个分区。
+有些只有一个分区的设备（例如 U 盘）插进去的时候没有数字，只有整个设备也是正常的啦~
+
+有些比较新的电脑带上了读卡器，或者在一些 eMMC 闪存的设备上（例如某些平板电脑），
+汝也许会看到 /dev/mmcblk0p1 一类的，大概就是第一块闪存上的第一个分区啦（为啥控制器从 0
+开始数但分区不是 ……）
+
+有些比较新的电脑使用的是 NVM Express 协议的硬盘，这个时候汝也许会看到 /dev/nvme0n1p1 这样的，
+就是第一个 NVMe 控制器上的第一个磁盘的第一个分区咯（依样画葫芦……）
+
