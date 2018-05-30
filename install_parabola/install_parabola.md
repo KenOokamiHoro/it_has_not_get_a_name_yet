@@ -99,6 +99,7 @@ root@parabolaiso ~ # ip link
     Network time on: yes
     NTP synchronized: no
     RTC in local TZ: no
+```
 
 准备硬盘空间
 -----------------------
