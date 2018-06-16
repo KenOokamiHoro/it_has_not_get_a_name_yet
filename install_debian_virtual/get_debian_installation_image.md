@@ -55,14 +55,14 @@ Linux:
 $ export DEBIAN_CDIMAGE_BASE=https://cdimage.debian.org # 方便起见
 $ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS # 或 SHA256SUMS（MD5 / SHA-1 有弱点，然而你还是可以这么做。）
 $ wget $DEBIAN_CDIMAGE_BASE/debian-cd/current/amd64/iso-dvd/SHA512SUMS.sign # 签名文件
-$ sha512sum -c SHA512SUMS
-$ # 文件全部 OK，然而这还没完。
 $ gpg --keyserver keyring.debian.org --recv-keys 0x988021A964E6EA7D 0xDA87E80D6294BE9B 0x42468F4009EA8AC3 # 收取密钥
-$ gpg --verify SHA512SUMS.sign # gpg: Good signature from xxx 才行
+$ gpg --verify SHA512SUMS.sign
+$ # gpg: Good signature from xxx，然而这还没完。
+$ sha512sum -c SHA512SUMS # 文件全部 OK 才行
 ```
 
 Mac: 
-下载 https://releases.gpgtools.org/GPG_Suite-2018.1.dmg 并安装，然后同上。
+下载 https://releases.gpgtools.org/GPG_Suite-2018.3.dmg 并安装，然后同上，但验证哈希时如果找不到`sha512sum`命令可以用`shasum -a 512 -c SHA512SUMS`。
 
 Windows: 
 
