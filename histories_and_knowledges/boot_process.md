@@ -16,8 +16,15 @@
 * 固件按照引导管理器中的启动项目，加载UEFI 应用。（通常是启动加载器）
 
 ### 启动加载器
+Second-stage Bootloader 俗称“启动加载器”，是用来引导系统启动，加载内核之类的特殊软件。
 
-启动加载器是 BIOS 或 UEFI 启动的第一个程序。负责使用正确的内核加载设备模块。
+GNU/Linux 下常用的启动引导器大概有这么几种：
+
+* GRUB ，即 GRand Unified Bootloader。大家现在经常用到的其实是它的下一代（GRUB 2），是个功能丰富的启动加载器
+（或者说是个 OS 也无妨）。
+* Systemd-boot ，前称 gummiboot。一个配置简单的启动加载器（虽然只支持 UEFI）
+* rEFInd，外观精美，自动配置简单。
+
 
 ### initramfs
 
