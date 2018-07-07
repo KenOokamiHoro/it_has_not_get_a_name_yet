@@ -69,7 +69,7 @@
 
 * 用户和组是个啥玩意？
 * 创建和管理用户（组）
-* root 权限是啥？以及如何获得 root 权限 （sudo / su）
+* [x] root 权限是啥？以及如何获得 root 权限 （sudo / su）
 * 文件和目录的权限
 * 开机关机和重启
 * Systemd （？，start/enable/stop/disable/status/edit 等，编写系统单元文件）
