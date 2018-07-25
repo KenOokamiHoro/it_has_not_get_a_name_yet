@@ -1,4 +1,4 @@
-# 防火墙工具 iptables 和 ufw
+# 防火墙工具 iptables
 
 # iptables是个啥
 iptables是一个运行在用户空间的应用软件，通过控制Linux内核netfilter模块，来管理网络数据包的流动与转送。iptables的操作需要用到超级用户的权限。
@@ -42,6 +42,39 @@ iptables中共有五个链：
 
 我们可以看到，filter 表在包的处理流程中，处于中间的位置，这部分也就是防火墙的主要功能所在。
 
+# iptables 的基本用法
+
+**警告：错误的使用 iptables 可能会造成很悲剧的结果哦**
+
+由于 iptables 用法比较复杂，咱下面就列几个比较常见的用法
+
+## 阻断某端口入网
+
+## 允许 TCP 80 入网
+`iptables –A INPUT –p tcp –dport 80 –j ACCEPT`
+
+## 允许 ping
+```bash
+iptables -A OUTPUT -p icmp -j ACCEPT
+iptables -A INPUT -p icmp -j ACCEPT  
+```
+
+## 拒绝22入网
+`iptables -A INPUT -p tcp --dport 22 -j ACCEPT   `
+
+## 开放 iptables
+```bash
+# 首先，我们先把 INPUT、FORWARD、OUTPUT 这三个链的规则设置成 ACCEPT 免得把自己锁在门外：
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+
+# 然后，我们清除 NAT、Mangle 表，清除链，删除所有的非默认链
+sudo iptables -t nat -F        #清除NAT表
+sudo iptables -t mangle -F    #清除mangle表
+sudo iptables -F    #清除所有链的规则
+sudo iptables -X    #删除非默认链
+```
 
 参考资料：
 https://xstarcd.github.io/wiki/Linux/iptables_forward_internetshare.html
