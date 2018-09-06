@@ -43,10 +43,6 @@ ZeroHello 的界面大概是这样的：
 
 **使用方式**：在需要选择身份的地方，点击 `登录`，在右上角选择身份即可。
 
-## 建立自己的站点
-
-### 从头开始
-
-### 克隆他人的站点
-
-## 通过 Tor 使用 Zeronet
+## 深入了解 ZeroNet
+* [建立自己的站点，或克隆他人的站点](http://127.0.0.1:43110/NewGFWTalk.bit/?Topic:18_13Z7XxTa7JuFat3KzzMWu3onwM6biLuurJ/) （中文，ZeroNet 上内容）
+* [通过 Tor 连接到 ZeroNet](https://zeronet.readthedocs.io/en/latest/faq/#how-to-use-zeronet-with-tor) （英文，readthedocs.io）
