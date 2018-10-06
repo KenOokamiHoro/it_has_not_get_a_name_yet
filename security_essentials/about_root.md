@@ -177,7 +177,7 @@ root ALL=(ALL) ALL
 #includedir /etc/sudoers.d
 ```
 
-更多的设置范例可以参考 (sudo 用户手册)[http://www.gratisoft.us/sudo/man/sudoers.html] 
+更多的设置范例可以参考 [sudo 用户手册](http://www.gratisoft.us/sudo/man/sudoers.html) 
 
 ## su 和 sudo 怎么拿到 root 权限的？
 
