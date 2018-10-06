@@ -34,20 +34,20 @@ Android 上的软件，实际上就是这样获取你授予它的 root 权限的
 
 sudo 的配置文件是 `/etc/sudoers` 。visudo会锁住 sudoers 文件，保存修改到临时文件，然后检查文件格式，确保正确后才会覆盖 sudoers 文件。必须保证 sudoers 格式正确，否则 sudo 将无法运行。 
 
-```bash
+```console
 # visudo
 ```
 
 看名字就知道它会用 vi 啦，如果汝想换一个自己喜欢的编辑器的话，可以用 `EDITOR` 环境变量设置：
 
-```bash
+```console
 # EDITOR=vim visudo
 ```
 
 ### wheel 组
 很多系统在 `/etc/sudoers` 都有这条预置策略： `wheel` 组的所有成员都可以使用 `sudo`。所以，如果想让一位用户使用 `sudo`，最简单的方法就是将此用户加入`wheel`组：
 
-```bash
+```console
 # usermod -G (追加用户到组) {组名} {用户名}
 usermod -G wheel <用户名>
 # gpasswd 也有类似的作用
