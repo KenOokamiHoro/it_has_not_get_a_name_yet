@@ -1,4 +1,14 @@
-# 选择一个发行版
+# 希望换一个发行版？
+
+用了这么久 Debian ，是不是觉得：
+
+* 某某软件不在 Debian 的仓库里只能从源代码编译
+* 软件太老，好多新特性用不上
+* apt 好难用（？）
+* ……
+
+是时候换个发行版啦~ <del>相信汝能举一反三学会其它发行版的操作……</del>
+
 
 ## 萌新选择发行版的第一奥义 (๑•̀ㅂ•́)و✧
 
@@ -63,3 +73,29 @@ Ubuntu 属于商业发行版（其后台是 Canonical公司）。Ubuntu曾经爆
 采用滚动方式发布的 Linux，通常都是激进型的啦 (￣ε(#￣)☆╰╮(￣▽￣///)
 
 简而言之: 看汝的喜好啦~
+
+## 想激进些？
+
+TODO: Fedora/Arch/openSUSE Tumbleweed
+
+## 想稳定些？
+
+TODO：CentOS（？）/继续用Debian
+
+## 想更温暖？（误）
+
+TODO：Gentoo
+
+## 想更清真（误）？
+
+获得 FSF <del>清真</del> 自由认证的发行版列表在这里 : https://www.gnu.org/distros/free-distros.html
+
+同时 [也对大多数流行的发行版批判了一番](https://www.gnu.org/distros/common-distros.zh-cn.html) 
+
+## 想搞大新闻？
+
+TODO：Kali/BlackArch/Tails/Whonix/QubesOS
+
+## 或者汝发现自己不是 GNU/Linux 爱好者……
+
+再见~ 
