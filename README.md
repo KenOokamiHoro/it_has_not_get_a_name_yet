@@ -8,7 +8,9 @@
 
 ## 示例环境
 
-Parabola GNU/Linux Libre（With GNOME Desktop）
+VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
+
+## VirtualBox + Debian， 这不<del>清真</del>自由……
 
 ## 计划中的目录
 
