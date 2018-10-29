@@ -15,5 +15,6 @@ _book
 *.mobi
 *.pdf
 
-# VSCode 
+# Visual Studio [Code] 
 .vscode/
+.vs/
