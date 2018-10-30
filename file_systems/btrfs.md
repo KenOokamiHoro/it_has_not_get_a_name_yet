@@ -106,6 +106,28 @@ Btrfs 支持 discard 和 fstrim 以释放未被使用的块
 
 `btrfs subvolume snapshot -r source [dest/]name`
 
+## 文件恢复
+
+**btrfs restore** 命令支持离线 Btrfs 磁盘的文件恢复操作。在尝试文件恢复前，请尽量不再往目标磁盘写入数据，避免要恢复的文件被覆盖消失。
+
+启动 LiveCD 环境并确保未挂载目标磁盘，安装 btrfs 用户空间工具 btrfs-tools/progs，使用下面的命令进行文件恢复操作。
+
+```bash
+# 假设目标磁盘为 /dev/sdb
+
+# 恢复所有文件到 /mnt/restore
+btrfs restore /dev/sdb /mnt/restore
+
+# 恢复所有文件并恢复软连接和文件 meta
+btrfs restore -m -S /dev/sdb /mnt/restore
+
+# 恢复单个文件
+## 首先 -D 参数 dry run 查看是否能找到需要的文件
+btrfs restore -D --path-regex '[文件路径的正则表示]' /dev/sdb /mnt/restore
+## 如果找到文件则继续恢复文件
+btrfs restore -m -S --path-regex '[文件路径的正则表示]' /dev/sdb /mnt/restore
+```
+
 ## 从 Ext3/4 迁移到 Btrfs
 
 从 CD Live 环境引导以离线转换磁盘，此部分请阅读本魔法书其他部分，转换前请**务必**备份您的重要数据
