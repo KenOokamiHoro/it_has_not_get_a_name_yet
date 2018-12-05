@@ -140,14 +140,6 @@
 
 现在来安装个浏览器试试吧……
 
-> Parabola 是基于 Arch Linux 的，所以包管理器也是 pacman 。
-> 以及仓库里并没有 Firefox 和 Chromium 😂
-
-```text
-firefox::fsf:firefox:[uses-nonfree] Has trademark issues, recommends nonfree software and by default has non-privacy search engines
-chromium::::[uses-nonfree][technical][FIXME:package] (1) links to proprietary plugins (2) background queries and silent user identification violate the FSDG (3) not entirely built from sources. see https://lists.nongnu.org/archive/html/gnu-linux-libre/2018-03/msg00098.html
-```
-
 于是就装 Iceweasel 了（就是改了商标的 Firefox），用 pacman -Ss 可以在仓库中搜索软件包。
 
 ![](/assets/exploring_gnome/33.png)
