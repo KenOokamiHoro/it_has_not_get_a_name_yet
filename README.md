@@ -8,9 +8,12 @@
 
 ## 示例环境
 
-VirtualBox + Debian <s>⑨</s> 9 （With GNOME Desktop）
+Arch Linux (With GNOME Desktop)
 
-## VirtualBox + Debian， 这不<del>清真</del>自由……
+## 在开始之前
+
+* 因为咱们现在没有考虑到和现有的操作系统（例如 Windows 共存的情况），
+  所以最好准备一台电脑？（虚拟机也行 😂）
 
 ## 计划中的目录
 
