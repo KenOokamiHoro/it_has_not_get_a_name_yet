@@ -108,6 +108,12 @@ root@archiso ~ # ip link
     # 用汝的门户的 URL 替换 <your_captive_portal_url>
     # 如果不知道的话，随便访问一个 HTTP 网站试试，应该就会被重定向到 Portal 了
     root@archiso ~ # elinks http://<your_captive_portal_url>
+```
+
+几个可供使用的 Captive Portal：
+* http://captive.v2ex.co/
+* http://detectportal.firefox.com/
+* http://captive.apple.com/
 
 时间同步
 ---------------------
