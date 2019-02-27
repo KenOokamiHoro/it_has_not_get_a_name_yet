@@ -22,7 +22,7 @@
 
 ### 应用程序日志
 
-很多应用程序在运行中都会产生日志。有的会把日志存储下来，有的则会把日志丢弃。试着在终端运行一些图形程序 （例如 KDE 的文件管理器`dolphin`），在程序启动后，你可能会在终端中看到类似这样的输出：
+很多应用程序在运行中都会产生日志。有的会把日志存储下来，有的则会把日志丢弃。试着在终端运行一些图形程序 （例如 KDE 的文件管理器 `dolphin`），在程序启动后，你可能会在终端中看到类似这样的输出：
 
 ```
 kf5.kio.core: We got some errors while running testparm "Load smb config files from /etc/samba/smb.conf\nError loading services.\n"
@@ -30,7 +30,7 @@ kf5.kio.core: We got some errors while running 'net usershare info'
 kf5.kio.core: "Can't load /etc/samba/smb.conf - run testparm to debug it\n"
 ```
 
-这些就是 `dolphin`在运行时会列印出的日志的一部分。很多程序在运行时都会列印出日志。例如这个文件管理器，如果你从桌面上运行，该产生的日志仍然会产生，只不过因为没有人收集而被丢掉了。
+这些就是 `dolphin` 在运行时会列印出的日志的一部分。很多程序在运行时都会列印出日志，例如这个文件管理器。如果你从桌面上运行，该产生的日志仍然会产生，只不过因为没有人收集而被丢掉了。
 
 这类日志可能有以下特征：
 
@@ -67,11 +67,19 @@ Feb 24 22:01:15 satania unbound[21229]: [21229:0] debug: Forward zone server lis
 
 （是的，这里日志的主机名夹杂了一点私货，Satania 最高！）
 
-按上下左右方向键可以向各个方向翻页。按 q 退出，按 h 会显示帮助和一些“日志查看器”的命令（没错这个也是 `man` 文档的查看器 `less`）。
+按上下左右方向键可以向各个方向翻页。按 q 退出，按 h 会显示帮助和一些“日志查看器”的命令（没错，这个日志查看器就是 `man` 文档的查看器 `less`）。
 
-以上就是查看日志的基本方法。想查看特定服务/时间的日志？也可以！
+以上就是查看日志的基本方法。想查看特定服务/时间的日志？也可以！几个例子：
 
-[TODO]
+* 查看 `dnscrypt-proxy.service` 服务的日志：
+  
+  `jounalctl -u dnscrypt-proxy.service`
+
+* 查看计算机在这次启动时的日志：
+
+  `journalctl --boot=-1`
+
+  （上一次就是 `--boot=-2`,依次类推）
 
 ## 如何向他人分享我的日志？
 
@@ -105,5 +113,19 @@ journalctl -u unbound.service > /tmp/output.txt
   curl -F c=@- http://fars.ee/ < your.log
   ```
 
-  和上面一样， `url` 那行是上传文本的链接。
+  和上面一样，返回内容中 `url` 那行是上传文本的链接。
 
+  ## 如何进行日志清理？
+
+  （这些命令需要 root 权限。）
+* `journalctl --vacuum-time=<时间>` - 清理早于<时间>的所有日志
+
+   可以接受 s/m/h/days/months/weeks/years 后缀。
+
+* `journalctl --vacuum-size=<大小>` - 清理日志直至日志总大小不大于<大小>
+
+   可以接受 K/M/G/T 后缀。
+
+* `journalctl --vacuum-files=<文件数>` - 清理日志直至文件数不大于<文件数>
+
+所有的日志清理操作均会按从早到晚的顺序进行清理，直至满足所有条件（是的，这几个参数可以同时使用）。
