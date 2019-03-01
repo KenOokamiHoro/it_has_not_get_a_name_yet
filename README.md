@@ -8,7 +8,7 @@
 
 ## 示例环境
 
-Arch Linux (With GNOME Desktop)
+Arch GNU/Linux (With GNOME Desktop)
 
 ## 在开始之前
 
@@ -31,7 +31,7 @@ Arch Linux (With GNOME Desktop)
 * 一块土豆 [BennyThink](https://github.com/BennyThink)
 * <del>小学生</del> [OriginCode](https://github.com/OriginCode)
 * 病娇酱 [yanderemoe](https://github.com/yanderemoe)
-* <del>灵魂互换</del> 布偶君 [ShadowRZ](https://github.com/ShadowRZ)
+* 雨宫恋叶 [ShadowRZ](https://github.com/ShadowRZ)
 * [Outvi V](https://github.com/outloudvi) 
 * 布鲁斯兔兔 [Brucetut](https://github.com/BruceZhang1993)
 * ……

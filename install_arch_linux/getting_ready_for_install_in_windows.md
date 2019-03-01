@@ -1,4 +1,4 @@
-# 在 Windows 上准备安装 Parabola
+# 在 Windows 上准备安装 Arch GNU/Linux
 
 > 其实条件允许的话，最好还是找一台电脑单独装（<s>双系统什么的最麻烦的啦~</s>）
 
