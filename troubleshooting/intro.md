@@ -12,7 +12,7 @@
 
 ## 行了你是不是又要让我看那个了？
 
-    那个 = https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md
+> 那个 = <https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md> （《提问的智慧》）
 
 嗯看起来汝好像被提示去看那个很多次了吧……
 
