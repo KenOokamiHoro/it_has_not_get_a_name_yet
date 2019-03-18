@@ -237,3 +237,5 @@ $ journalctl -u privoxy -b -1 -r
 > 这样做的用处至少有三点。 第一，表现出你为简化问题付出了努力，这可以
 > 使你得到回答的机会增加； 第二，简化问题使你更有可能得到有用的答案；
 > 第三，在精炼你的 bug 报告的过程中，你很可能就自己找到了解决方法或权宜之计。
+>
+> （出自《提问的智慧》，[Gasolin 与 Ryanhan Wu 翻译版本](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)。）
