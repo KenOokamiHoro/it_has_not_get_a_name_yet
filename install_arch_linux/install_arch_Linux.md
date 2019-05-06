@@ -82,9 +82,6 @@ root@archiso ~ # ip link
 
 * 如果有无线网卡的话，试试连接到 WiFi ……
 
-    如果汝的 WiFi 是用 WPA2-Enterpise 验证的（输入用户名和密码那种），还是放弃吧……
-    wifi-menu 现在还不支持这个（
-
     * 输入 `wifi-menu` ,等一下会看到找到的 WiFi 网络的列表
 
 ![](/assets/install_arch_linux/10.png)
@@ -98,6 +95,23 @@ root@archiso ~ # ip link
 ![](/assets/install_arch_linux/12.png)
 
     * 然后按 Enter 确认，连到 WiFi 的话会返回 Shell。
+    
+    
+ 如果汝的 WiFi 是用 WPA2-Enterpise 验证的（输入用户名和密码那种）……wifi-menu 现在还不支持这个，那么汝大概需要自己准备wpa_applicant的配置文件。
+ 
+   * 大概是这个样子的（如果汝使用的是WPA-EAP，并且二阶段认证是MSCHAPv2的话）
+        ```
+        network={
+            ssid="汝WiFi的名字"
+            key_mgmt=WPA-EAP
+            eap=PEAP
+            identity="汝的用户名"
+            password="汝的密码"
+            phase2="auth=MSCHAPV2" 
+        }   
+        ```
+   * 注意保留引号，然后上面那个V要大写。
+   * 然后汝把这个东西保存成比如说`wpa.conf`，然后就可以输入`sudo wpa_supplicant -i 汝的网卡 -c wap.conf` 打开WiFi了
 
 谁叫 Arch 连不上网的话都装不了 😂
 
