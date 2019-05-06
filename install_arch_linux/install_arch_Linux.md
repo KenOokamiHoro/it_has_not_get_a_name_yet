@@ -112,6 +112,7 @@ root@archiso ~ # ip link
         ```
    * 注意保留引号，然后上面那个V要大写。
    * 然后汝把这个东西保存成比如说`wpa.conf`，然后就可以输入`sudo wpa_supplicant -i 汝的网卡 -c wap.conf` 打开WiFi了
+   * 至于汝的网卡叫什么……就是上面说的运行`ip link`列出的那个叫做`wlp`的东西。
 
 谁叫 Arch 连不上网的话都装不了 😂
 
