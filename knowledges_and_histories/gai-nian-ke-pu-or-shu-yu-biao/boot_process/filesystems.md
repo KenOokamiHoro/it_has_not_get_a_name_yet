@@ -6,7 +6,7 @@
 
 文件系统中一般包含文件名、元数据、安全访问等几个要素。文件名就是好理解啦，是否限制文件名长度，是否可以使用特殊字符（如emoji），是否大小写敏感；元数据则是保存文件自身信息的一块数据，比如说文件的创建、修改、访问时间戳，文件所有者，访问权限等。
 
-![](../.gitbook/assets/windows_bad_filename.jpg)
+![](../../../.gitbook/assets/windows_bad_filename.jpg)
 
 Windows 限制使用一些特殊的字符作为文件名
 
@@ -22,7 +22,7 @@ Windows 限制使用一些特殊的字符作为文件名
 
   显著的缺点是不支持大于4GiB的单个文件（exFAT支持）。
 
-![](../.gitbook/assets/fat32_4gb.jpg)
+![](../../../.gitbook/assets/fat32_4gb.jpg)
 
 * NTFS（New Technology File System），广泛用于 Windows 中的一种文件系统。
 * 此外在 macOS 中也先后使用过 HFS（Hierarchical File System）、HFS+ 和 APFS 文件系统。
