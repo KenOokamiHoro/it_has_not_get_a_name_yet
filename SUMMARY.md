@@ -13,18 +13,18 @@
 * [有关虚拟化的二三事](ke-pu-he-shi-hua/something_about_virtualization.md)
 * [关于信息安全的一点瞎扯淡](ke-pu-he-shi-hua/security_basis.md)
 
-## 安装和简单设置 VirtualBox
+## 安装 Arch Linux <a id="install_arch_linux"></a>
 
-* [下载和安装 VirtualBox](an-zhuang-he-jian-dan-she-zhi-virtualbox/get_virtualbox.md)
-* [创建虚拟机](an-zhuang-he-jian-dan-she-zhi-virtualbox/new_virtual_machine.md)
-
-## 安装 Arch Linux
-
-* [下载和制作 Arch Linux 的安装介质](an-zhuang-arch-linux/preparing_install_medium.md)
-* [安装 Arch Linux](an-zhuang-arch-linux/install_arch_linux.md)
-* [安装完成后的一些初始设置](an-zhuang-arch-linux/post_installation_configuration.md)
+* [下载和制作 Arch Linux 的安装介质](install_arch_linux/preparing_install_medium.md)
+* [安装 Arch Linux](install_arch_linux/install_arch_linux.md)
+* [安装完成后的一些初始设置](install_arch_linux/post_installation_configuration.md)
 
 ## 基本使用
 
 * [GNOME 桌面环境概览](ji-ben-shi-yong/explore_gnome.md)
+
+## 附录：安装和设置 VirtualBox <a id="virtualbox_install_and_usage"></a>
+
+* [下载和安装 VirtualBox](virtualbox_install_and_usage/get_virtualbox.md)
+* [创建虚拟机](virtualbox_install_and_usage/new_virtual_machine.md)
 
