@@ -1,4 +1,8 @@
-# BIOS 和 UEFI
+---
+description: 硬盘的分区表和电脑启动有什么关系？
+---
+
+# MBR 和 GPT，BIOS 和 UEFI
 
 ## BIOS 和 UEFI 究竟是什么鬼
 

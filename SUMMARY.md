@@ -8,9 +8,9 @@
 
 * [概念科普 or 术语表](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/README.md)
   * [Arch Linux 的启动流程](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/README.md)
+    * [MBR 和 GPT，BIOS 和 UEFI](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/bios_and_uefi.md)
     * [文件系统](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/filesystems.md)
     * [磁盘和分区](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/disk_and_partition.md)
-    * [BIOS 和 UEFI](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/bios_and_uefi.md)
   * [信息安全 ABCD](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/security_basis.md)
   * [有关虚拟化的二三事](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/something_about_virtualization.md)
 * [UNIX / POSIX / GNU/Linux 史话](knowledges_and_histories/unix-posix-gnulinux-shi-hua.md)

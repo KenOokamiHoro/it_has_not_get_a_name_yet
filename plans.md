@@ -1,3 +1,7 @@
+---
+description: （咕咕咕）
+---
+
 # 计划中的目录
 
 ## 基础（？）知识
@@ -15,13 +19,6 @@
 * 为何要尝试 GNU/Linux ？
 * 一个可行的（？）学习路线
 * 获得帮助和帮助他人
-
-## 在 VirtualBox 虚拟机中安装 Debian
-
-* 取得 Debian 的安装 ISO
-* 用 ISO 启动虚拟机
-* 进行安装
-* 登录和安装 Guest Additions
 
 ## 在实机上安装
 
