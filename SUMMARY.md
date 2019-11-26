@@ -21,9 +21,9 @@
 * [安装 Arch Linux](install_arch_linux/install_arch_linux.md)
 * [安装完成后的一些初始设置](install_arch_linux/post_installation_configuration.md)
 
-## 基本使用
+## 基本使用 <a id="basic_usage"></a>
 
-* [GNOME 桌面环境概览](ji-ben-shi-yong/explore_gnome.md)
+* [GNOME 桌面环境概览](basic_usage/explore_gnome.md)
 
 ## 附录：安装和设置 VirtualBox <a id="virtualbox_install_and_usage"></a>
 
