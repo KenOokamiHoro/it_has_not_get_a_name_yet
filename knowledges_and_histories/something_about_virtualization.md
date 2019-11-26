@@ -18,7 +18,7 @@ description: >-
 
 而 `Hypervisors` 则是用来创建、监控、运行虚拟机的软件/固件/硬件。通过架构，我们又可将 hypervisors 区分为两类：
 
-![Types of hypervisors](../../.gitbook/assets/hypervisor.png)
+![Types of hypervisors](../.gitbook/assets/hypervisor.png)
 
 * Type 1 hypervisors
   * 直接运行在硬件上

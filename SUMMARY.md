@@ -2,18 +2,18 @@
 
 * [概览](README.md)
 * [计划中的目录](plans.md)
-* [推荐资源](tui-jian-zi-yuan.md)
+* [推荐资源](resources.md)
 
 ## 科普和史话 <a id="knowledges_and_histories"></a>
 
-* [概念科普 or 术语表](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/README.md)
-  * [Arch Linux 的启动流程](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/README.md)
-    * [MBR 和 GPT，BIOS 和 UEFI](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/bios_and_uefi.md)
-    * [文件系统](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/filesystems.md)
-    * [磁盘和分区](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/boot_process/disk_and_partition.md)
-  * [信息安全 ABCD](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/security_basis.md)
-  * [有关虚拟化的二三事](knowledges_and_histories/gai-nian-ke-pu-or-shu-yu-biao/something_about_virtualization.md)
-* [UNIX / POSIX / GNU/Linux 史话](knowledges_and_histories/unix-posix-gnulinux-shi-hua.md)
+* [Arch Linux 的启动流程](knowledges_and_histories/boot_process/README.md)
+  * [MBR 和 GPT，BIOS 和 UEFI](knowledges_and_histories/boot_process/mbr_and_gpt_bios_and_uefi.md)
+  * [磁盘和分区](knowledges_and_histories/boot_process/disk_and_partition.md)
+  * [文件系统](knowledges_and_histories/boot_process/filesystems.md)
+* [信息安全 ABCD](knowledges_and_histories/security_basis.md)
+* [有关虚拟化的二三事](knowledges_and_histories/something_about_virtualization.md)
+* [UNIX 和 GNU/Linux](knowledges_and_histories/unix_and_gnu.md)
+* [自由软件，自由软件运动，Stallman 以及……](knowledges_and_histories/free_software_movement.md)
 
 ## 安装 Arch Linux <a id="install_arch_linux"></a>
 
