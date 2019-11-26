@@ -4,10 +4,6 @@
 
 ## 标题征集中 \(/▽＼\)
 
-```text
-然而 ……
-```
-
 ## 示例环境
 
 Arch GNU/Linux \(With GNOME Desktop\)
