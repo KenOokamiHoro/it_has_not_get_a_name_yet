@@ -17,10 +17,9 @@
 * [有关 root 的二三事](knowledges_and_histories/about_root.md)
 * [软件包和软件包管理器](knowledges_and_histories/package_manager.md)
 
-## 编者经验谈
+## 编者经验谈 <a id="experiences_from_writers"></a>
 
-* [KenOokamiHoro](experience_from_writers/kenookamihoro.md)
-* [选择一个发行版](experience_from_writers/choose_a_distribution.md)
+* [KenOokamiHoro](experiences_from_writers/kenookamihoro.md)
 
 ## 安装 Arch Linux <a id="install_arch_linux"></a>
 
@@ -35,16 +34,20 @@
 
 ## 使用各种软件
 
-* [Pastebin 服务 - 粘贴和分享文字](using_softwares/pastebins.md)
-* [ZeroNet - 无中心化网络](using_softwares/zeronet.md)
+* [Pastebin 服务 - 粘贴和分享文字](shi-yong-ge-zhong-ruan-jian/pastebins.md)
+* [ZeroNet - 无中心化网络](shi-yong-ge-zhong-ruan-jian/zeronet.md)
 
 ## 故障排除
 
-* [引言](troubleshooting/intro.md)
-* [获取和发送日志](troubleshooting/accuiring_and_sending_logs.md)
+* [引言](gu-zhang-pai-chu/intro.md)
+* [获取和发送日志](gu-zhang-pai-chu/accuiring_and_sending_logs.md)
 
 ## 附录：安装和设置 VirtualBox <a id="virtualbox_install_and_usage"></a>
 
 * [下载和安装 VirtualBox](virtualbox_install_and_usage/get_virtualbox.md)
 * [创建虚拟机](virtualbox_install_and_usage/new_virtual_machine.md)
+
+## 前方的路 <a id="further_reading"></a>
+
+* [选择一个发行版](further_reading/choose_a_distribution.md)
 
