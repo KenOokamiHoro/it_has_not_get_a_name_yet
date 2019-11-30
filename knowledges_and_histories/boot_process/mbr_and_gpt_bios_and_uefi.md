@@ -22,15 +22,13 @@ BIOS 自被开发出至今，已经接近 40 多年了。而 BIOS 的缺陷也�
 
 UEFI 不仅能读取分区表，还能自动支持文件系统。所以它不像 BIOS，已经没有仅仅 440 字节可执行代码即 MBR 的限制了，它完全用不到 MBR。
 
-而 UEFI 需要一个 ESP （EFI System Partition）分区，里面有 UEFI 所要用到的一些文件。计算机供应商可以在 /EFI// 文件夹里放官方指定的文件，还能用固件或它的 shell，即 UEFI shell，来启动引导程序。ESP 分区需要为 FAT32 格式以保证最大的兼容性。建议 ESP 分区为 512 MB。
+而 UEFI 需要一个 ESP （EFI System Partition）分区，里面有 UEFI 所要用到的一些文件。计算机供应商可以在 /EFI/ 文件夹里放官方指定的文件，还能用固件或它的 shell，即 UEFI shell，来启动引导程序。ESP 分区需要为 FAT32 格式以保证最大的兼容性。建议 ESP 分区为 512 MB。
 
 UEFI 主流都支持 MBR 和 GPT 分区表。Apple-Intel Macs 上的 EFI 还支持 Apple 专用分区表。绝大部分 UEFI 固件支持软盘上的 FAT12，硬盘上的 FAT16、FAT32 文件系统，以及 CD/DVDs 的 IS09660 和 UDF。Intel Macs 的 EFI 还额外支持 HFS/HFS+ 文件系统。
 
 而不得不提到的一个东西就是 Secure Boot，这个 Secure Boot 原来是为了帮助系统只运行签过名（Signed）的内核，以避免如 Bootkit 之类的后门的入侵。不过对于大公司来说，压榨自由是他们最爱干的事情，所以这个 Secure Boot 被微软公司和电脑厂商联手做成了只允许运行他们指定的系统。不过一般发行版都已经自带了经过微软签名的内核，所以是可以安装的。即使没有签过名也不要担心，绝大部分厂商都允许你把 Secure Boot 设置为 Custom 模式，这样你就可以添加自己的公钥然后对内核进行签名，之后就可以运行啦。
 
-```text
 有些 GNU/Linux 用户会把这种功能叫做“限制启动”（Restricted Boot），以表达对 M$ 的不满（雾）
-```
 
 ## 前面说了那么多废话，那么问题来了，怎么区分咱现在是那一种启动方式呢~
 
